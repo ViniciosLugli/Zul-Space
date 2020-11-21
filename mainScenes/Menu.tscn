@@ -1,0 +1,723 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://dataCode/Menu.gd" type="Script" id=1]
+[ext_resource path="res://dataFile/fonts/kenvector_future_thin.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://dataFile/fonts/kenvector_future.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://dataFile/fonts/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://dataFile/xfx/select1.wav" type="AudioStream" id=5]
+[ext_resource path="res://dataFile/icons/discord_icon.png" type="Texture" id=6]
+[ext_resource path="res://dataCode/VersionControll.gd" type="Script" id=7]
+[ext_resource path="res://dataCode/ButtonConfig.gd" type="Script" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.478431, 0.784314, 1, 0.392157 )
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="DynamicFont" id=6]
+size = 40
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.478431, 0.784314, 1, 0.392157 )
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="DynamicFont" id=10]
+size = 40
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.478431, 0.784314, 1, 0.392157 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 30
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxEmpty" id=13]
+
+[sub_resource type="StyleBoxEmpty" id=14]
+
+[sub_resource type="StyleBoxEmpty" id=15]
+
+[sub_resource type="StyleBoxEmpty" id=16]
+
+[sub_resource type="StyleBoxEmpty" id=17]
+
+[sub_resource type="DynamicFontData" id=18]
+font_path = "res://dataFile/fonts/UbuntuMono-Italic.ttf"
+
+[sub_resource type="DynamicFont" id=19]
+size = 45
+outline_color = Color( 0.752941, 0, 0, 1 )
+use_mipmaps = true
+font_data = SubResource( 18 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 90
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=21]
+length = 4.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Tittle_ZUL:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray(  ),
+"times": PoolRealArray(  )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Tittle_SPACE:percent_visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray(  ),
+"times": PoolRealArray(  )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Tittle_ZUL:rect_position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 165, -0.25, 0, 0.25, 0, -352, -0.25, 0, 0.25, 0, 165, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("Tittle_ZUL:rect_position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 50, -0.25, 0, 0.25, 0, 50, -0.25, 0, 0.25, 0, 50, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Tittle_ZUL:rect_rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 4 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Tittle_ZUL:rect_scale:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1.3, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Tittle_ZUL:rect_scale:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1.3, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Tittle_SPACE:rect_position:x")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 225, -0.25, 0, 0.25, 0, -277, -0.25, 0, 0.25, 0, 225, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Tittle_SPACE:rect_position:y")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 50, -0.25, 0, 0.25, 0, 50, -0.25, 0, 0.25, 0, 50, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Tittle_SPACE:rect_rotation")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 4 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("Tittle_SPACE:rect_scale:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1.3, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("Tittle_SPACE:rect_scale:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1.3, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2, 4 )
+}
+
+[sub_resource type="Animation" id=22]
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("TittlesAnimation/Tittle_ZUL:rect_position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"points": PoolRealArray( -354, -0.25, 0, 0.25, 0, -354, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("TittlesAnimation/Tittle_ZUL:rect_position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 944, -0.25, 0, 0.25, 0, 50, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("TittlesAnimation/Tittle_SPACE:rect_position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/keys = {
+"points": PoolRealArray( -277, -0.25, 0, 0.25, 0, -277, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("TittlesAnimation/Tittle_SPACE:rect_position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 944, -0.25, 0, 0.25, 0, 50, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Buttons/PlayButton:rect_position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/keys = {
+"points": PoolRealArray( 810, -0.25, 0, 0.25, 0, 810, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Buttons/PlayButton:rect_position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 1409, -0.25, 0, 0.25, 0, 515, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Buttons/ConfigButton:rect_position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = false
+tracks/6/keys = {
+"points": PoolRealArray( 810, -0.25, 0, 0.25, 0, 810, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Buttons/ConfigButton:rect_position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 1459, -0.25, 0, 0.25, 0, 565, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Buttons/ExitButton:rect_position:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = false
+tracks/8/keys = {
+"points": PoolRealArray( 810, -0.25, 0, 0.25, 0, 810, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Buttons/ExitButton:rect_position:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 1509, -0.25, 0, 0.25, 0, 615, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 1 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("RPC:rect_position:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 40, -0.25, 0, 0.25, 0, 40, -0.25, 0, 0.25, 0, 40, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 0, 1 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("RPC:rect_position:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 1160, -0.25, 0, 0.25, 0, 1180, -0.25, 0, 0.25, 0, 1000, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( -0.1, 0, 1 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("VersionControll:rect_position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("VersionControll:rect_position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 80, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+
+[sub_resource type="Animation" id=23]
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("TittlesAnimation/Tittle_ZUL:rect_position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"points": PoolRealArray( -354, -0.25, 0, 0.25, 0, -354, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("TittlesAnimation/Tittle_ZUL:rect_position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 50, -0.25, 0, 0.25, 0, 944, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("TittlesAnimation/Tittle_SPACE:rect_position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/keys = {
+"points": PoolRealArray( -277, -0.25, 0, 0.25, 0, -277, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("TittlesAnimation/Tittle_SPACE:rect_position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 50, -0.25, 0, 0.25, 0, 944, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Buttons/PlayButton:rect_position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/keys = {
+"points": PoolRealArray( 810, -0.25, 0, 0.25, 0, 810, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Buttons/PlayButton:rect_position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 515, -0.25, 0, 0.25, 0, 1409, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("Buttons/ConfigButton:rect_position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = false
+tracks/6/keys = {
+"points": PoolRealArray( 810, -0.25, 0, 0.25, 0, 810, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("Buttons/ConfigButton:rect_position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 565, -0.25, 0, 0.25, 0, 1459, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("Buttons/ExitButton:rect_position:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = false
+tracks/8/keys = {
+"points": PoolRealArray( 810, -0.25, 0, 0.25, 0, 810, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("Buttons/ExitButton:rect_position:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 615, -0.25, 0, 0.25, 0, 1509, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("RPC:rect_position:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 40, -0.25, 0, 0.25, 0, 40, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("RPC:rect_position:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 1000, -0.25, 0, 0.25, 0, 1180, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("VersionControll:rect_position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("VersionControll:rect_position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 80, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1 )
+}
+
+[node name="Menu" type="Control"]
+pause_mode = 1
+anchor_top = -0.00185185
+anchor_right = 1.0
+anchor_bottom = 0.998148
+margin_left = -6.23096
+margin_top = -4.59668
+margin_right = -6.23096
+margin_bottom = -4.59668
+theme = SubResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 960.172 ]
+}
+
+[node name="Buttons" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="Button" parent="Buttons"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 790.0
+margin_top = 1355.72
+margin_right = 1090.0
+margin_bottom = 1405.72
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
+disabled = true
+text = "Jogar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConfigButton" type="Button" parent="Buttons"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 790.0
+margin_top = 1405.72
+margin_right = 1090.0
+margin_bottom = 1455.72
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+disabled = true
+text = "Ajustes"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitButton" type="Button" parent="Buttons"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 790.0
+margin_top = 1455.72
+margin_right = 1090.0
+margin_bottom = 1505.72
+custom_styles/hover = SubResource( 11 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = SubResource( 10 )
+text = "Sair"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RPC" type="Control" parent="."]
+margin_left = 40.0
+margin_top = 1180.0
+margin_right = 80.0
+margin_bottom = 1220.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RPCLabel" type="Label" parent="RPC"]
+margin_left = 80.0
+margin_right = 476.0
+margin_bottom = 57.0
+custom_fonts/font = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RPCColorRect" type="ColorRect" parent="RPC"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -50.0
+margin_top = -50.0
+margin_right = 50.0
+margin_bottom = 50.0
+color = Color( 0, 0.701961, 0.109804, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="discord_icon" type="Sprite" parent="RPC/RPCColorRect"]
+position = Vector2( 50, 50 )
+texture = ExtResource( 6 )
+
+[node name="ReloadRPCButton" type="Button" parent="RPC"]
+margin_left = -30.0
+margin_top = -30.0
+margin_right = 70.0
+margin_bottom = 70.0
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/focus = SubResource( 15 )
+custom_styles/disabled = SubResource( 16 )
+custom_styles/normal = SubResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ZulcoinsLabel" type="Label" parent="RPC"]
+margin_left = 125.0
+margin_top = -95.0
+margin_right = 425.0
+margin_bottom = -8.0
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 1, 0.913725, 0.121569, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ZulcoinsTextLabel" type="Label" parent="RPC"]
+margin_left = -33.0
+margin_top = -95.0
+margin_right = 267.0
+margin_bottom = -8.0
+custom_fonts/font = SubResource( 12 )
+text = "Zulcoins:
+HighScore:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VersionControll" type="Control" parent="."]
+margin_top = 80.0
+margin_right = 48.0
+margin_bottom = 128.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoLabel" type="Label" parent="VersionControll"]
+margin_left = 1790.0
+margin_top = 1025.0
+margin_right = 1884.0
+margin_bottom = 1071.0
+custom_fonts/font = SubResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoLabelOutdate" type="Label" parent="VersionControll"]
+margin_left = 705.0
+margin_top = 1020.0
+margin_right = 1225.0
+margin_bottom = 1070.0
+custom_fonts/font = SubResource( 19 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TittlesAnimation" type="Node2D" parent="."]
+position = Vector2( 534, 154 )
+
+[node name="Tittle_ZUL" type="Label" parent="TittlesAnimation"]
+margin_left = 165.0
+margin_top = 910.722
+margin_right = 652.001
+margin_bottom = 1012.72
+rect_pivot_offset = Vector2( -1466, -12 )
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0.18, 0.66, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "zul"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tittle_SPACE" type="Label" parent="TittlesAnimation"]
+margin_left = 225.0
+margin_top = 910.722
+margin_right = 723.0
+margin_bottom = 1012.72
+rect_pivot_offset = Vector2( -1466, -12 )
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "space"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TittleAnimation" type="AnimationPlayer" parent="TittlesAnimation"]
+anims/TittleAnim = SubResource( 21 )
+
+[node name="MenuAnimation" type="AnimationPlayer" parent="."]
+anims/InTextMenu = SubResource( 22 )
+anims/OutTextMenu = SubResource( 23 )
+
+[node name="OutTimer" type="Timer" parent="."]
+
+[node name="RPCTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="MenuSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -30.0
+[connection signal="pressed" from="Buttons/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="Buttons/ConfigButton" to="." method="_on_ConfigButton_pressed"]
+[connection signal="pressed" from="Buttons/ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="pressed" from="RPC/ReloadRPCButton" to="." method="_on_ReloadRPCButton_pressed"]
+[connection signal="timeout" from="OutTimer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="RPCTimer" to="." method="_on_RPCTimer_timeout"]

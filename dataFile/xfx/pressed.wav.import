@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pressed.wav-9a986aa60993d8f136eeecf01d0b7503.sample"
+
+[deps]
+
+source_file="res://dataFile/xfx/pressed.wav"
+dest_files=[ "res://.import/pressed.wav-9a986aa60993d8f136eeecf01d0b7503.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

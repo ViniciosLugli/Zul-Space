@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/asteroid_explode2.wav-47de1426072eee72a6beea80bae8d5fd.sample"
+
+[deps]
+
+source_file="res://dataFile/xfx/asteroid_explode2.wav"
+dest_files=[ "res://.import/asteroid_explode2.wav-47de1426072eee72a6beea80bae8d5fd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

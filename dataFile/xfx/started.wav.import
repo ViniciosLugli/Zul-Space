@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/started.wav-7aea4718ec09b13f24e832be8e62736c.sample"
+
+[deps]
+
+source_file="res://dataFile/xfx/started.wav"
+dest_files=[ "res://.import/started.wav-7aea4718ec09b13f24e832be8e62736c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

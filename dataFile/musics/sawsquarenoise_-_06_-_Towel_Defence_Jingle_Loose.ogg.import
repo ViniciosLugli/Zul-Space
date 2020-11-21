@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sawsquarenoise_-_06_-_Towel_Defence_Jingle_Loose.ogg-7c31d45bc5132743769e0f9ad68a3b12.oggstr"
+
+[deps]
+
+source_file="res://dataFile/musics/sawsquarenoise_-_06_-_Towel_Defence_Jingle_Loose.ogg"
+dest_files=[ "res://.import/sawsquarenoise_-_06_-_Towel_Defence_Jingle_Loose.ogg-7c31d45bc5132743769e0f9ad68a3b12.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

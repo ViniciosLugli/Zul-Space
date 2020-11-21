@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sawsquarenoise_-_03_-_Towel_Defence_Ingame.ogg-428bc9fad75b0fe60eb2e97d2f3ff7da.oggstr"
+
+[deps]
+
+source_file="res://dataFile/musics/sawsquarenoise_-_03_-_Towel_Defence_Ingame.ogg"
+dest_files=[ "res://.import/sawsquarenoise_-_03_-_Towel_Defence_Ingame.ogg-428bc9fad75b0fe60eb2e97d2f3ff7da.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/asteroid_hit2.wav-36e82e2310bd5efc306a0ed5e3bad98d.sample"
+
+[deps]
+
+source_file="res://dataFile/xfx/asteroid_hit2.wav"
+dest_files=[ "res://.import/asteroid_hit2.wav-36e82e2310bd5efc306a0ed5e3bad98d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

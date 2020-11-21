@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://dataCode/ParticlesExplosion.cs" type="Script" id=1]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.155556, 0.312, 0.432, 0.552, 0.718518, 0.824, 1 )
+colors = PoolColorArray( 0.149567, 0.492619, 0.660156, 1, 0.0884399, 0.338395, 0.539063, 1, 0.140381, 0.461195, 0.71875, 1, 0.124496, 0.486623, 0.777344, 1, 0.0982666, 0.392606, 0.628906, 1, 0.686687, 0.686687, 0.686687, 1, 0.119492, 0.731408, 0.746094, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+flag_disable_z = true
+direction = Vector3( 0, 0, 0 )
+spread = 180.0
+gravity = Vector3( 0, 200, 0 )
+initial_velocity = 100.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 3.0
+color_ramp = SubResource( 2 )
+
+[node name="ParticlesPlayerHit" type="Particles2D"]
+emitting = false
+amount = 100
+one_shot = true
+explosiveness = 0.49
+randomness = 0.64
+process_material = SubResource( 3 )
+script = ExtResource( 1 )

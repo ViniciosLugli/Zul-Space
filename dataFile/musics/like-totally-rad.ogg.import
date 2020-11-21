@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/like-totally-rad.ogg-b47119a50e02e164ada639d55fa645bc.oggstr"
+
+[deps]
+
+source_file="res://dataFile/musics/like-totally-rad.ogg"
+dest_files=[ "res://.import/like-totally-rad.ogg-b47119a50e02e164ada639d55fa645bc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

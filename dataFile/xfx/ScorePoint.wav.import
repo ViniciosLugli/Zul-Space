@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ScorePoint.wav-f9c9208d9a4a6f21d29a6156a3151c9c.sample"
+
+[deps]
+
+source_file="res://dataFile/xfx/ScorePoint.wav"
+dest_files=[ "res://.import/ScorePoint.wav-f9c9208d9a4a6f21d29a6156a3151c9c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

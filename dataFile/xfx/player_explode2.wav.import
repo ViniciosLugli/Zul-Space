@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/player_explode2.wav-3e2cbcef50a5aa0397ac8cb5f915c203.sample"
+
+[deps]
+
+source_file="res://dataFile/xfx/player_explode2.wav"
+dest_files=[ "res://.import/player_explode2.wav-3e2cbcef50a5aa0397ac8cb5f915c203.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
