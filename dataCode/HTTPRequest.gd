@@ -1,9 +1,7 @@
 extends Node
 
-const Firebaselink = "https://***REMOVED***.firebaseio.com/"
-const FirebaseAPIKey = ".json?auth=***REMOVED***"
-#const Firebaselink = "https://***REMOVED***.firebaseio.com/"
-#const FirebaseAPIKey = ".json?auth=***REMOVED***"
+const Firebaselink = "https://PROJECT.firebaseio.com/"
+const FirebaseAPIKey = ".json?auth=AUTH_KEY"
 const comm = "UsersData/"
 const use_ssl = true
 
@@ -187,7 +185,7 @@ func GeralGetData_Signal(result, response_code, headers, body):
 	if(result == HTTPRequest.RESULT_SUCCESS):
 		if(response_code == 200):
 			var temp = JSON.parse(body.get_string_from_utf8())
-			GeralGetData_Result = temp.result 
+			GeralGetData_Result = temp.result
 		else:
 			GeralGetData_Result = null
 #	print("Response: ", response_code)
@@ -202,7 +200,7 @@ func GeralGetData_Signal1(result, response_code, headers, body):
 	if(result == HTTPRequest.RESULT_SUCCESS):
 		if(response_code == 200):
 			var temp = JSON.parse(body.get_string_from_utf8())
-			GeralGetData_Result1 = temp.result 
+			GeralGetData_Result1 = temp.result
 		else:
 			GeralGetData_Result1 = null
 #	print("Response: ", response_code)
